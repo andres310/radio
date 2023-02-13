@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_genero"
+        android:layout_width="242dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014">
+
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_estadocivil"
+        android:layout_width="242dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/rg_genero"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/rg_genero"
+        app:layout_constraintTop_toBottomOf="@+id/rg_genero">
+
+        <RadioButton
+            android:id="@+id/soltero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soltero" />
+
+        <RadioButton
+            android:id="@+id/casado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Casado" />
+
+        <RadioButton
+            android:id="@+id/rejuntado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Re juntado" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_sensacion"
+        android:layout_width="240dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/rg_estadocivil"
+        app:layout_constraintStart_toStartOf="@+id/rg_estadocivil"
+        app:layout_constraintTop_toBottomOf="@+id/rg_estadocivil">
+
+        <RadioButton
+            android:id="@+id/feliz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feliz" />
+
+        <RadioButton
+            android:id="@+id/triste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triste" />
+
+        <RadioButton
+            android:id="@+id/desesperado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desesperado" />
+
+        <RadioButton
+            android:id="@+id/tranquilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tranquilo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="@+id/rg_sensacion"
+        app:layout_constraintStart_toStartOf="@+id/rg_sensacion"
+        app:layout_constraintTop_toBottomOf="@+id/rg_sensacion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
