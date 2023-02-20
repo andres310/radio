@@ -4,39 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <RadioGroup
-        android:id="@+id/rg_genero"
+        android:id="@+id/rg_estadocivil"
         android:layout_width="242dp"
-        android:layout_height="93dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
 
         <RadioButton
-            android:id="@+id/hombre"
+            android:id="@+id/soltero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hombre" />
+            android:text="Soltero" />
 
         <RadioButton
-            android:id="@+id/mujer"
+            android:id="@+id/casado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mujer" />
+            android:text="Casado" />
+
+        <RadioButton
+            android:id="@+id/rejuntado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Re juntado" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/btn_sig3"
+        android:id="@+id/btn_sig2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="192dp"
         android:text="Siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/rg_genero"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/rg_genero" />
+        app:layout_constraintEnd_toEndOf="@+id/rg_estadocivil" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
